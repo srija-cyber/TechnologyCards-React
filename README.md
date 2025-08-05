@@ -1,112 +1,73 @@
-In this project, let's build **Technology Cards** by applying the concepts we have learned till now.
+# 🚀 Technology Cards using React
 
-You’ll be provided with pre-filled code, including the basic React Code and the CSS styles.
+This project showcases beautifully designed **Technology Cards** built using **React** and **JSX**. Each card highlights a technology with its logo, name, and a short description.
 
-Your task is to read the given code carefully and then complete the missing parts to achieve the expected output shown in the reference image.
+---
 
-### Refer to the image below:
+## 🛠 Tech Stack
 
-<br/>
-<div style="text-align: center;">
-<img src="https://assets.ccbp.in/frontend/content/react-js/technology-cards-lg-output.png" alt="simple-cards-app-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+- React
+- JSX
+- CSS (custom or utility-first like Tailwind)
+- Vite or Create React App
 
-### Design Files
+---
 
-<details>
-<summary>Click to view</summary>
+## 💡 Features
 
-- [Extra Small (Size < 576px), Small (Size >= 576px), and Medium (Size >= 768px)](https://assets.ccbp.in/frontend/content/react-js/technology-cards-sm-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/technology-cards-lg-output.png)
+- ✨ Interactive cards with hover effects
+- 📱 Responsive layout
+- ⚙️ Reusable component design
+- 💻 Clean and modern UI
 
-</details>
+---
 
-### Set Up Instructions
+## 📁 Folder Structure
 
-<details>
-<summary>Click to view</summary>
+src/
+│
+├── components/
+│ └── TechnologyCard.jsx
+│
+├── assets/
+│ └── (Technology logos)
+│
+├── App.jsx
+├── index.js
+└── styles/
+└── TechnologyCard.css
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm run dev`
+---
 
-</details>
+## 📦 Installation & Usage
 
-### Completion Instructions
+```bash
+  # Clone the repository
+  git clone https://github.com/yourusername/react-technology-cards.git
+  cd react-technology-cards
+  
+  # Install dependencies
+  npm install
+  
+  # Run the app
+  npm run dev  # or npm start if using CRA
+🧩 Example Usage
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+  <TechnologyCard
+    logo="/assets/react-logo.png"
+    title="React"
+    description="A JavaScript library for building user interfaces."
+  />
 
-The app must have the following functionalities
+🌐 Live Demo
+Add a link here if hosted (e.g., Vercel/Netlify).
 
-- The App is provided with `cardsList`. It consists of a list of cardItem objects with the following properties in each cardItem object
+📄 License
+This project is licensed under the MIT License.
 
-  |     Key     | Data Type |
-  | :---------: | :-------: |
-  |     id      |  Number   |
-  |    title    |  String   |
-  | description |  String   |
-  |   imgUrl    |  String   |
-  |  className  |  String   |
+👩‍💻 Author
+Made with ❤️ by Dhanwada Srija
 
-- The value of the key `id` should be used as a key to the `CardItem` component.
-- The value of the key `className` should be used for the HTML list item in the `CardItem` component.
+---
 
-</details>
-
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/App.jsx`
-- `src/App.css`
-- `src/components/CardItem/index.jsx`
-- `src/components/CardItem/index.css`
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- Each `CardItem` should have an HTML image element with `alt` attribute value as the value of the key **title** in `cardsList`
-</details>
-
-### Resources
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #f4faff; width: 150px; padding: 10px; color: black">Hex: #f4faff</div>
-<div style="background-color: #64748b; width: 150px; padding: 10px; color: white">Hex: #64748b</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #ff4f64; width: 150px; padding: 10px; color: white">Hex: #ff4f64</div>
-<div style="background-color: #00a8e7; width: 150px; padding: 10px; color: white">Hex: #00a8e7</div>
-<div style="background-color: #44c4a1; width: 150px; padding: 10px; color: white">Hex: #44c4a1</div>
-<div style="background-color: #fcc200; width: 150px; padding: 10px; color: white">Hex: #fcc200</div>
-<div style="background-color: #171f46; width: 150px; padding: 10px; color: white">Hex: #171f46</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+Let me know if you'd like a downloadable version or want it personalized with your name or GitHub link, Srija!
